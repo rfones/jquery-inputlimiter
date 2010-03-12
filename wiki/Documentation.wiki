@@ -1,17 +1,11 @@
 #labels Featured,Phase-Implementation,Phase-Deploy,Phase-Support
-#Documentation on jquery-inputlimiter, a jQuery plugin will allow you to limit input into form fields.
-
 = Overview =
-
 This jQuery plugin will allow you to limit input into form fields. It can display a message as the user types to let them know how many characters they have remaining.
 
-
 = Use =
-
 [http://jquery.org jQuery] is required to use this plugin.
 
 == Examples ==
-
 Limit all textareas to the default limit of 255 characters:
 {{{
 $(function() {
@@ -27,7 +21,6 @@ $(function() {
 More advanced examples can be found on the [http://rustyjeans.com/jquery-inputlimiter/demo.htm demonstration] page.
 
 = Options =
-
 == limit ==
 Type: Integer
 
