@@ -1,5 +1,5 @@
 #labels Featured,Phase-Implementation,Phase-Deploy,Phase-Support
-#This jQuery plugin will allow you to limit input into form fields.
+#Documentation on jquery-inputlimiter, a jQuery plugin will allow you to limit input into form fields.
 
 = Overview =
 
