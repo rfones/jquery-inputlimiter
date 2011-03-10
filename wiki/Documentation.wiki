@@ -120,3 +120,10 @@ Type: Boolean
 Default: `true`
 
 Determines if the '%s' will be populated with the letter 's' when the characters remaining is equal to zero. If this is true '%s' with be populated with an 's' when the remaiing character is equal to zero. If this option is false the '%s' will not be populated when the remaining characters is equal to zero.
+
+== allowExceed ==
+Type: Boolean
+
+Default: `false`
+
+Determines whether the user is allow to keep entering more characters after they have reached the limit. By default the option stops the user from typing when they reach the limit.
