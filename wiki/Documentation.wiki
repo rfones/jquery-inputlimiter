@@ -126,4 +126,4 @@ Type: Boolean
 
 Default: `false`
 
-Determines whether the user is allow to keep entering more characters after they have reached the limit. By default the option stops the user from typing when they reach the limit.
+Determines whether the user is allow to keep entering more characters after they have reached the limit. By default the option stops the user from typing when they reach the limit. When the limited is exceeded the remaining text will display a negative number indicating how many character they are over.
