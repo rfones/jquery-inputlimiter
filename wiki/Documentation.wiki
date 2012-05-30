@@ -63,8 +63,11 @@ Default:
 {{{
 function (opts, charsRemaining) {
 	var remText = opts.remText;
+	if (charsRemaining === 0 && opts.remFullText !== null) {
+		remText = opts.remFullText;
+	}
 	remText = remText.replace(/\%n/g, charsRemaining);
-	remText = remText.replace(/\%s/g, ( charsRemaining == 1?'':'s' ));
+	remText = remText.replace(/\%s/g, (opts.zeroPlural ? (charsRemaining === 1 ? '' : 's') : (charsRemaining <= 1 ? '' : 's')));
 	return remText;
 };
 }}}
@@ -127,3 +130,17 @@ Type: Boolean
 Default: `false`
 
 Determines whether the user is allow to keep entering more characters after they have reached the limit. By default the option stops the user from typing when they reach the limit. When the limited is exceeded the remaining text will display a negative number indicating how many character they are over.
+
+== useMaxlength ==
+Type: Boolean
+
+Default: `true`
+
+If this option is set to true the `maxlength` attribute of the element will be used. If a limit is specified in the options the limit passed will override the `maxlength` attribute. If no `limit` option is passed it will use the limit from the `maxlength` attribute.
+
+== limitBy ==
+Type: String
+
+Default: `'characters'`
+
+Gives you the ability to limit a field either by characters or by words. The only valid values for this option are `'characters'` and `'words'`.
