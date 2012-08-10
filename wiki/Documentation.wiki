@@ -144,3 +144,10 @@ Type: String
 Default: `'characters'`
 
 Gives you the ability to limit a field either by characters or by words. The only valid values for this option are `'characters'` and `'words'`.
+
+== lineReturnCount ==
+Type: Integer
+
+Default: `1`
+
+This gives you the ability to count new lines as more than one character. If your system is storing a new line as two charaters i`n your database you can use this option, by setting `lineReturnCount to `2` it will count all line returns as two characters. 
