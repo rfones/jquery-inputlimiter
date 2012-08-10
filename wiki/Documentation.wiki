@@ -150,4 +150,4 @@ Type: Integer
 
 Default: `1`
 
-This gives you the ability to count new lines as more than one character. If your system is storing a new line as two charaters i`n your database you can use this option, by setting `lineReturnCount to `2` it will count all line returns as two characters. 
+This gives you the ability to count new lines as more than one character. If your system is storing a new line as two characters in your database you can use this option, by setting `lineReturnCount1 to `2` it will count all line returns as two characters. 
